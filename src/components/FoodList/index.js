@@ -13,7 +13,7 @@ export function FoodList() {
   const { data, isLoading, error, isSuccess } = useQuery(
     ["food"],
     () => getFood(),
-    { initialData: { data: "" } }
+    // { initialData: { data: "" } }
   );
   return (
     <Center h={"100vh"} justifyContent={"center"}>
